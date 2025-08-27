@@ -4,6 +4,8 @@ A **React-based Recipe Finder App** that lets users browse recipes by categories
 
 ---
 
+# Live Demo - https://fast-eat-three.vercel.app/
+
 ## 🚀 Features
 
 - 📂 **Browse by Categories** – Chicken, Dessert, Vegan, Pasta, Breakfast, etc.  
@@ -99,6 +101,7 @@ const fetchCategories = async () => {
     console.error("Error fetching categories:", error);
   }
 };
+```
 
 📝 Future Enhancements
 

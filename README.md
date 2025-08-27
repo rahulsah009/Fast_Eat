@@ -1,34 +1,35 @@
-# FastEat
-A React-based Recipe Finder App that lets users browse recipes by categories and explore detailed cooking instructions. This project demonstrates React fundamentals, API integration, routing, and responsive UI design.
+# 🍳 Recipe Finder
 
-#Features
+A **React-based Recipe Finder App** that lets users browse recipes by categories and explore detailed cooking instructions. This project demonstrates **React fundamentals**, API integration, routing, and responsive UI design.  
 
-.Browse by Categories – Chicken, Dessert, Vegan, Pasta, Breakfast, etc.
+---
 
-.Search Recipes by name or ingredient.
+## 🚀 Features
 
-.Recipe Cards – Display recipes with images, titles, and categories.
+- 📂 **Browse by Categories** – Chicken, Dessert, Vegan, Pasta, Breakfast, etc.  
+- 🔍 **Search Recipes** by name or ingredient.  
+- 🖼️ **Recipe Cards** – Display recipes with images, titles, and categories.  
+- 📋 **Recipe Details** – View ingredients, instructions, and images.  
+- 🛠️ **Routing** – Implemented with `react-router-dom`.  
+- 🎨 **Modern Styling** – Done with **Sass (SCSS)**.  
+- 📱 **Responsive UI** – Works on desktop & mobile.  
 
-.Recipe Details – View ingredients, instructions, and images.
+---
 
-.Routing – Implemented with react-router-dom.
+## 🛠️ Tech Stack
 
-.Modern Styling – Done with Sass (SCSS).
+- **React.js (v18)** – Component-based frontend  
+- **React Router v6** – Navigation and routing  
+- **Axios** – API calls  
+- **Sass (SCSS)** – Styling  
+- **React Icons** – For icons  
+- **Create React App** – Boilerplate  
 
-.Responsive UI – Works on desktop & mobile.
+---
 
-🛠️ Tech Stack
+## 📂 Project Structure
 
- .React.js (v18) – Component-based frontend
-
- .React Router v6 – Navigation and routing
-
- .Axios – API calls
-
- .Sass (SCSS) – Styling
-
-📂 Project Structure
- my-app/
+my-app/
 │-- public/
 │   └── index.html
 │-- src/
@@ -47,28 +48,66 @@ A React-based Recipe Finder App that lets users browse recipes by categories and
 │-- README.md
 
 
-Installation & Setup
 
-1.Clone this repo
-git clone https://github.com/your-username/recipe-finder.git
-cd recipe-finder
+---
 
-2.Install dependencies
-npm install
+## ⚙️ Installation & Setup
 
-3.Start development server
-npm start
-
-4.Open http://localhost:3000
- in your browser 🚀
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/your-username/recipe-finder.git
+   cd recipe-finder
+2. **Install dependencies**
+   ```bash
+   npm install
+3. **Start development server**
+   ```bash
+   npm start
 
 📸 Screenshots
-🏠 Categories Page
-![Categories Screenshot](https://github.com/user-attachments/assets/e846c851-51b1-4c94-bd72-c62c83af13fe)
+    UI
+    ![Categories Screenshot](https://github.com/user-attachments/assets/e846c851-51b1-4c94-bd72-c62c83af13fe)
 
-📋 Recipe List
-![Recipe List Screenshot](https://github.com/user-attachments/assets/bcd3c65c-58a1-432a-9127-944e5e9cc626)
+   🏠 Categories Page
+   ![Recipe List Screenshot](https://github.com/user-attachments/assets/bcd3c65c-58a1-432a-9127-944e5e9cc626)
+   
+📦 Dependencies
 
-🍲 Recipe Details
-![Recipe Details Screenshot](https://github.com/user-attachments/assets/d259d386-8866-4eaa-a351-700151a9d846)
+   From package.json:
+
+   ->react – Core library
+
+   ->react-router-dom – For navigation
+
+  ->axios – For API calls
+
+  ->sass – For styling
+
+  ->react-icons – For icons
+
+🧩 Example API Call
+```bash
+import axios from "axios";
+
+const fetchCategories = async () => {
+  try {
+    const response = await axios.get(
+      "https://www.themealdb.com/api/json/v1/1/categories.php"
+    );
+    return response.data.categories;
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+  }
+};
+
+📝 Future Enhancements
+
+❤️ Add "Favorites" (save recipes locally).
+
+📌 Add filters (by diet, cuisine, difficulty).
+
+🌍 Add multi-language support.
+
+🛒 Generate shopping list from ingredients.
+   
 

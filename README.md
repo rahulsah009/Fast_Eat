@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🍳 Recipe Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React-based Recipe Finder App** that lets users browse recipes by categories and explore detailed cooking instructions. This project demonstrates **React fundamentals**, API integration, routing, and responsive UI design.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# Live Demo - https://fast-eat-three.vercel.app/
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📂 **Browse by Categories** – Chicken, Dessert, Vegan, Pasta, Breakfast, etc.  
+- 🔍 **Search Recipes** by name or ingredient.  
+- 🖼️ **Recipe Cards** – Display recipes with images, titles, and categories.  
+- 📋 **Recipe Details** – View ingredients, instructions, and images.  
+- 🛠️ **Routing** – Implemented with `react-router-dom`.  
+- 🎨 **Modern Styling** – Done with **Sass (SCSS)**.  
+- 📱 **Responsive UI** – Works on desktop & mobile.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js (v18)** – Component-based frontend  
+- **React Router v6** – Navigation and routing  
+- **Axios** – API calls  
+- **Sass (SCSS)** – Styling  
+- **React Icons** – For icons  
+- **Create React App** – Boilerplate  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
+```
+my-app/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── CategoryCard.jsx
+│ │ ├── Navbar.jsx
+│ │ └── RecipeCard.jsx
+│ ├── pages/
+│ │ ├── Categories.jsx
+│ │ ├── RecipeDetail.jsx
+│ │ └── Home.jsx
+│ ├── App.jsx
+│ ├── App.scss
+│ └── index.js
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/your-username/recipe-finder.git
+   cd recipe-finder
+2. **Install dependencies**
+   ```bash
+   npm install
+3. **Start development server**
+   ```bash
+   npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📸 Screenshots
+    UI
+    ![Categories Screenshot](https://github.com/user-attachments/assets/e846c851-51b1-4c94-bd72-c62c83af13fe)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   🏠 Categories Page
+   ![Recipe List Screenshot](https://github.com/user-attachments/assets/bcd3c65c-58a1-432a-9127-944e5e9cc626)
+   
+📦 Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   From package.json:
 
-## Learn More
+   ->react – Core library
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ->react-router-dom – For navigation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ->axios – For API calls
 
-### Code Splitting
+  ->sass – For styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ->react-icons – For icons
 
-### Analyzing the Bundle Size
+🧩 Example API Call
+```bash
+import axios from "axios";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+const fetchCategories = async () => {
+  try {
+    const response = await axios.get(
+      "https://www.themealdb.com/api/json/v1/1/categories.php"
+    );
+    return response.data.categories;
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+  }
+};
+```
 
-### Making a Progressive Web App
+📝 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+❤️ Add "Favorites" (save recipes locally).
 
-### Advanced Configuration
+📌 Add filters (by diet, cuisine, difficulty).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🌍 Add multi-language support.
 
-### Deployment
+🛒 Generate shopping list from ingredients.
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

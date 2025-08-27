@@ -32,22 +32,22 @@ A **React-based Recipe Finder App** that lets users browse recipes by categories
 ## 📂 Project Structure
 
 my-app/
-│-- public/
-│   └── index.html
-│-- src/
-│   ├── components/
-│   │   ├── CategoryCard.jsx
-│   │   ├── Navbar.jsx
-│   │   └── RecipeCard.jsx
-│   ├── pages/
-│   │   ├── Categories.jsx
-│   │   ├── RecipeDetail.jsx
-│   │   └── Home.jsx
-│   ├── App.jsx
-│   ├── App.scss
-│   └── index.js
-│-- package.json
-│-- README.md
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── CategoryCard.jsx
+│ │ ├── Navbar.jsx
+│ │ └── RecipeCard.jsx
+│ ├── pages/
+│ │ ├── Categories.jsx
+│ │ ├── RecipeDetail.jsx
+│ │ └── Home.jsx
+│ ├── App.jsx
+│ ├── App.scss
+│ └── index.js
+├── package.json
+└── README.md
 
 
 

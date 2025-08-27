@@ -30,7 +30,7 @@ A **React-based Recipe Finder App** that lets users browse recipes by categories
 ---
 
 ## 📂 Project Structure
-
+```
 my-app/
 ├── public/
 │ └── index.html
@@ -48,7 +48,7 @@ my-app/
 │ └── index.js
 ├── package.json
 └── README.md
-
+```
 
 
 ---
